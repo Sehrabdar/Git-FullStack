@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.card {
+  padding: 1.25rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.language {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 6px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.link:hover {
+  background: #15803d;
+}
