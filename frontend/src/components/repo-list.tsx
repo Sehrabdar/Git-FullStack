@@ -13,7 +13,7 @@ export default function RepoList({ repos }: Props) {
     <div className={styles.grid}>
       {repos.map((repo) => (
         <div key={repo.id} className={styles.card}>
-          <h3 className={styles.title}>{repo.fullName}</h3>
+          <h3 className={styles.heading}>{repo.description}</h3>
           <div>
             <Link to={`/repo/${repo.id}`} className={styles.link}>
               View summary →

@@ -10,6 +10,9 @@ export class SearchRepoDto {
   @Expose()
   fullName: string;
 
+  @Expose()
+  description: string;
+
   constructor(partial: Partial<SearchRepoDto>) {
     Object.assign(this, partial);
   }

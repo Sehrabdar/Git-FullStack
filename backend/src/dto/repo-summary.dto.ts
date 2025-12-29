@@ -14,6 +14,9 @@ export class RepoSummaryDto {
   stars: number;
 
   @Expose()
+  forks: number;
+
+  @Expose()
   language: string;
 
   @Expose()

@@ -32,10 +32,10 @@ export default function App() {
         element={
           <>
             <h1 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-              GitHub Repo Search
+              GitHub Repository Search
             </h1>
             <SearchBar onSearch={handleSearch} />
-            {loading && <p>Loading...</p>}
+            {loading && <p>Hold on...</p>}
             {error && <p style={{ color: 'red' }}>{error}</p>}
             <RepoList repos={repos} />
           </>

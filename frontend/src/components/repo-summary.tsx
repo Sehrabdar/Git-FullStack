@@ -34,17 +34,16 @@ export default function RepoSummaryPage() {
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {summary && (
         <div className={styles.wrapper}>
-          <h2 className={styles.heading}>{summary.description || 'Repository'}</h2>
           <a href={summary.url} target="_blank" rel="noreferrer">
-            Open on GitHub
+           <h2 className={styles.link}>{summary.name}</h2>
           </a>
           <div className={styles.meta}>
             <span className={styles.badge}>⭐ Stars: {summary.stars}</span>
             <span className={styles.badge}>🍴 Forks: {summary.forks}</span>
-            <span className={styles.badge}>🧮 Commits: {summary.commitsCount}</span>
+            <span className={styles.badge}>🧮 Commits: {summary.commitsLastYear}</span>
             <span className={styles.badge}>🌿 Branches: {summary.branchesCount}</span>
             {summary.language && (
-              <span className={styles.badge}>📝 {summary.language}</span>
+              <span className={styles.badge}>📝language: {summary.language}</span>
             )}
           </div>
         </div>

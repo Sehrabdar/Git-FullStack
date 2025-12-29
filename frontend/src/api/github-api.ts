@@ -8,13 +8,15 @@ export interface RepoSearchResult {
   id: number;
   name: string;
   fullName: string;
+  description: string;
 }
 
 export interface RepoSummary {
+  name: string;
   description: string;
   stars: number;
   forks: number;
-  commitsCount: number;
+  commitsLastYear: number;
   branchesCount: number;
   language?: string;
   url: string;

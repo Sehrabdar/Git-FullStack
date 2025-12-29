@@ -24,3 +24,12 @@
   background: #e5e7eb;
   font-size: 0.85rem;
 }
+
+.link{
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: rgb(5, 134, 174);
+}

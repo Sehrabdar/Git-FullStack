@@ -43,7 +43,8 @@ export class GithubService {
     return (data.items ?? []).map((repo: any) => new SearchRepoDto({
       id: repo.id,
       name: repo.name,
-      fullName: repo.full_name
+      fullName: repo.full_name,
+      description: repo.description,
     }),
     );
   }
@@ -115,6 +116,7 @@ export class GithubService {
       name: fullName,
       description: repo.description || 'No description',
       stars: repo.stargazers_count,
+      forks: repo.forks_count,
       language: repo.language,
       commitsLastYear,
       branchesCount,
