@@ -33,15 +33,21 @@
 }
 
 .link {
-  display: inline-block;
+  display: inline;
   padding: 0.4rem 1.2rem;
   border-radius: 6px;
-  background: #16a34a;
-  color: #ffffff;
+  color: #000000;
   font-size: 0.9rem;
   text-decoration: none;
 }
 
 .link:hover {
-  background: #15803d;
+   color: #1d4ed8;
+}
+
+.fullName{
+  color: #322f2f;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 200;
 }

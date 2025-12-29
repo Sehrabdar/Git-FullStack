@@ -13,10 +13,10 @@ export default function RepoList({ repos }: Props) {
     <div className={styles.grid}>
       {repos.map((repo) => (
         <div key={repo.id} className={styles.card}>
-          <h3 className={styles.heading}>{repo.description}</h3>
+          <div className={styles.fullName}>{repo.fullName} </div>
           <div>
             <Link to={`/repo/${repo.id}`} className={styles.link}>
-              View summary →
+              <h3 className={styles.heading}>{repo.description}</h3>
             </Link>
           </div>
         </div>
